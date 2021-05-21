@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 /// READ
 router.post('/show', (req, res) => {
 
-  const mainURL = process.env.mainURL || 'http://localhost:3000/shorten/'
+  const mainURL = 'http://whispering-peak-36649.herokuapp.com/'
   // const name_short = generateShortenweb()
   let newshortenURL = ''
 
