@@ -1,5 +1,5 @@
 const shortenweb = require('../shortenweb')
-const db = require('../../config/monggose')
+const db = require('../../config/mongoose')
 
 
 db.once('open', () => {

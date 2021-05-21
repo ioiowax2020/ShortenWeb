@@ -1,5 +1,13 @@
-<div class="row">
-  {{#each shorten}}
-  <div class="col-12">{{this.name}}</div>
-  {{/each}}
+<div class="d-flex flex-column justify-content-center 
+align-items-center">
+  <i class="fas fa-link fa-9x"></i>
+  <p>{{shorten.name}}</p>
+  <div>
+    <form action="/shorten/show" method="POST">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control-lg" placeholder="input your URL here...">
+      </div>
+      <button type="submit" class="btn btn-secondary btn-lg">Shorten</button>
+    </form>
+  </div>
 </div>
