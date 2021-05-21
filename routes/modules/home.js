@@ -1,11 +1,11 @@
 const express = require('express')
 const router = express.Router()
 
-const shortens = require('../../models/shortenweb')
+const Shortenweb = require('../../models/shortenweb')
 
 router.get('/', (req, res) => {
 
-  return shortens.find()
+  return Shortenweb.find()
     .lean()
     .then(shorten => {
       res.render('index', { shorten })
@@ -13,5 +13,6 @@ router.get('/', (req, res) => {
     .catch(error => console.log('error'))
 
 })
+
 
 module.exports = router
