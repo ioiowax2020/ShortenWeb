@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 /// READ
 router.post('/show', (req, res) => {
 
-  const mainURL = 'http://localhost:3000/shorten/'
+  const mainURL = process.env.mainURL || 'http://localhost:3000/shorten/'
   // const name_short = generateShortenweb()
   let newshortenURL = ''
 
@@ -46,7 +46,6 @@ router.post('/show', (req, res) => {
     )
 })
 
-const mainURL = 'http://localhost:3000/shorten/'
 
 //redirect 
 router.get('/:shorten', (req, res) => {
