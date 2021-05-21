@@ -47,20 +47,4 @@ router.post('/show', (req, res) => {
 })
 
 
-
-//redirect 
-router.get('/:shorten', (req, res) => {
-
-  const shortenName = req.params.shorten
-  console.log(shortenName)
-  Shortenweb.findOne({ name_short: shortenName })
-    .lean()
-    .then((web) => {
-      if (web) {
-        res.status(302).redirect(web.name)
-      }
-    })
-    .catch(error => console.log('error'))
-})
-
 module.exports = router
