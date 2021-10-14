@@ -13,6 +13,7 @@ Could shorten your website and redirect!
 
 
 <h2>專案畫面</h2>
+![image](https://raw.githubusercontent.com/ioiowax2020/expense-tracker/master/public/stylesheets/2.0.png)
 
 
 <h2>Contributing - 安裝</h2>
