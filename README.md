@@ -1,6 +1,8 @@
-<h1>短網址產生器</h1>
+<h1>Shorten Website-短網址產生器</h1>
 
-<span>能把長網址縮短成短網址，並且導向該網頁！</span>
+<span>
+  Could shorten your website and redirect!
+  能把長網址縮短成短網址，並且導向該網頁！</span>
 
 <h2>功能列表</h2>
 
@@ -9,6 +11,7 @@
 <li>縮短的短網址不重複</li>
 <li>可以使用短網址導向該網頁</li>
 
+<h2>專案畫面</h2>
 
 
 
