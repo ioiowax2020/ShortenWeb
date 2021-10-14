@@ -3,7 +3,7 @@ const router = express.Router()
 
 const Shortenweb = require('../../models/shortenweb')
 const generateShortenweb = require('../../public/javascripts/generate_Shortenweb')
-
+const Function = require('../../public/javascripts/function')
 
 router.get('/', (req, res) => {
   res.render('show')
